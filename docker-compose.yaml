@@ -1,3 +1,12 @@
 services:
-  hoppscotch-extension:
-    image: ${DESKTOP_PLUGIN_IMAGE}
+
+  hoppscotch:
+    container_name: hoppscotch
+    image: hoppscotch/hoppscotch:latest
+    ports:
+      - 32433:3000
+
+# docker compose up
+# docker compose down
+#
+# Access: http://localhost:32433
